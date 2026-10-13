@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --forest-deep: #0a1610;
+    --forest-dark: #0f2218;
+    --forest-mid: #162f22;
+    --forest-light: #224332;
+    --sage-muted: #64816c;
+    --sage-light: #8fa996;
+    --cream-warm: #f7f4ec;
+    --cream-soft: #ede7d9;
+    --beige-muted: #d0c5b3;
+    --olive-dark: #293626;
+    --gold-antique: #cda851;
+    --gold-bright: #e5c36f;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: var(--cream-warm);
+    background-color: var(--forest-deep);
+  }
+
+  body {
+    background-color: #0b1711;
+    overflow-x: hidden;
+  }
+}
+
+/* Editorial Typography */
+.font-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Cinematic Grain Overlay */
+.film-grain {
+  background-image: radial-gradient(rgba(205, 168, 81, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(18, 38, 27, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(143, 169, 150, 0.16);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+}
+
+.glass-panel-subtle {
+  background: rgba(15, 33, 23, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(143, 169, 150, 0.1);
+}
+
+.glass-panel-cream {
+  background: rgba(237, 231, 217, 0.94);
+  color: #12241a;
+  border: 1px solid rgba(205, 168, 81, 0.35);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.45);
+}
+
+.gold-glow {
+  box-shadow: 0 0 35px -5px rgba(205, 168, 81, 0.3);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f7f4ec 0%, #e2c275 50%, #cda851 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a1610;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3a2b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cda851;
+}
