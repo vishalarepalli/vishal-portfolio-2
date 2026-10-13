@@ -107,7 +107,7 @@ export const AboutSection: React.FC = () => {
             {/* Official Resume Action */}
             <div className="pt-2">
               <a
-                href="/assets/vishal_resume.pdf"
+                href={`${import.meta.env.BASE_URL}assets/vishal_resume.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => soundManager.playClick()}

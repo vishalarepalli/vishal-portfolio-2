@@ -41,7 +41,7 @@ export const AboutPortrait: React.FC = () => {
       >
         {/* Genuine High-Res Photograph of Vishal */}
         <img
-          src="/assets/vishal_photo.jpg"
+          src={`${import.meta.env.BASE_URL}assets/vishal_photo.jpg`}
           alt="Vishal Arepalli"
           className="w-full h-full object-cover object-top filter brightness-[0.98] contrast-[1.03] transition-transform duration-700 group-hover:scale-105 select-none"
         />

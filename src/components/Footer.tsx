@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
           {/* Quick Actions Bar */}
           <div className="flex flex-wrap items-center justify-center gap-3 pt-3">
             <a
-              href="/assets/vishal_resume.pdf"
+              href={`${import.meta.env.BASE_URL}assets/vishal_resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => soundManager.playClick()}

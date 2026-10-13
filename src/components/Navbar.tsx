@@ -81,7 +81,7 @@ export const Navbar: React.FC = () => {
         {/* Resume PDF Action & Mobile Menu Toggle */}
         <div className="flex items-center gap-3">
           <a
-            href="/assets/vishal_resume.pdf"
+            href={`${import.meta.env.BASE_URL}assets/vishal_resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => soundManager.playClick()}
@@ -141,7 +141,7 @@ export const Navbar: React.FC = () => {
           </a>
           <div className="pt-2 border-t border-[#8fa996]/10 px-2">
             <a
-              href="/assets/vishal_resume.pdf"
+              href={`${import.meta.env.BASE_URL}assets/vishal_resume.pdf`}
               target="_blank"
               className="flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-[#cda851] text-[#0a1610] text-xs font-semibold"
             >

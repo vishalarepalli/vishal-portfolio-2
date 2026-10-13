@@ -151,7 +151,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onComplete, isRe
           {/* Vishal's verified photograph reference */}
           <div className="relative rounded-xl overflow-hidden aspect-[4/5] max-h-[380px]">
             <img
-              src="/assets/vishal_photo.jpg"
+              src={`${import.meta.env.BASE_URL}assets/vishal_photo.jpg`}
               alt="Vishal Arepalli"
               className="w-full h-full object-cover object-top filter brightness-[0.96] contrast-[1.04]"
             />

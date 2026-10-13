@@ -88,7 +88,7 @@ export const Hero: React.FC = () => {
             <div className="relative rounded-3xl overflow-hidden glass-panel border border-[#cda851]/35 shadow-2xl p-2.5">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-[#0d1e15]">
                 <img
-                  src="/assets/vishal_photo.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/vishal_photo.jpg`}
                   alt="Vishal Arepalli"
                   className="w-full h-full object-cover object-top filter brightness-[0.97] contrast-[1.03] transition-transform duration-700 hover:scale-105"
                 />

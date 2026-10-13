@@ -39,7 +39,7 @@ class SoundController {
     if (this.isMuted) return;
     try {
       if (!this.whooshAudio) {
-        this.whooshAudio = new Audio('/audio/whoosh.wav');
+        this.whooshAudio = new Audio(`${import.meta.env.BASE_URL}audio/whoosh.wav`);
         this.whooshAudio.preload = 'auto';
       }
       this.whooshAudio.volume = 1.0;
@@ -124,7 +124,7 @@ class SoundController {
     if (this.isMuted) return;
     try {
       if (!this.clickAudio) {
-        this.clickAudio = new Audio('/audio/click.wav');
+        this.clickAudio = new Audio(`${import.meta.env.BASE_URL}audio/click.wav`);
         this.clickAudio.volume = 0.35;
       }
       this.clickAudio.currentTime = 0;
